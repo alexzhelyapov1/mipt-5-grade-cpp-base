@@ -9,6 +9,8 @@ add_executable(02.02 02.02.cpp)
 add_executable(02.03 02.03.cpp)
 # target_compile_options(02.03 PRIVATE -pedantic)
 
+add_executable(02.06 02.06.cpp)
+
 add_executable(02.07 02.07.cpp)
 
 add_executable(02.08 02.08.cpp)
