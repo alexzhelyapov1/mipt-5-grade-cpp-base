@@ -7,7 +7,7 @@
 
 int main() {
     std::vector<double> data;
-    double value;
+    double value = 0.0;
     while (std::cin >> value) {
         data.push_back(value);
     }

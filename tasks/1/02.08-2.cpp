@@ -5,7 +5,7 @@
 #include <algorithm>
 
 std::size_t get_collatz_length(
-    unsigned long long int n, 
+    unsigned long long int n,
     std::unordered_map<unsigned long long int, std::size_t>& cache) {
 
     if (cache.count(n)) {

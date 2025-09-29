@@ -4,7 +4,7 @@
 #include <iomanip>
 
 int main() {
-    double a, b, c;
+    double a = 0.0, b = 0.0, c = 0.0;
     std::cin >> a >> b >> c;
 
     constexpr double epsilon = std::numeric_limits<double>::epsilon();

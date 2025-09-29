@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    char c;
+    char c = 0;
     std::cin >> c;
 
     switch (c) {
