@@ -1,4 +1,4 @@
-# cmake -GNinja -DCMAKE_BUILD_TYPE=Debug ..
+# cmake -GNinja -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18 -DCMAKE_BUILD_TYPE=Debug ..
 
 cmake_minimum_required(VERSION 3.28)
 project(cpp_coursework LANGUAGES CXX)
