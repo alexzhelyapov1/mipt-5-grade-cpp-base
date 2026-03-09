@@ -1,0 +1,10 @@
+{
+  "name": "cpp-base",
+  "version-string": "1.0.0",
+  "dependencies": [
+    "boost-dll",
+    "boost-system",
+    "gtest",
+    "benchmark"
+  ]
+}

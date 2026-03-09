@@ -27,3 +27,16 @@ sudo ./llvm.sh 18 all
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
 sudo apt update && sudo apt install -y libstdc++-14-dev
 ```
+
+### Install deps:
+```sh
+git submodule update --init --recursive
+./third-party/vcpkg/bootstrap-vcpkg.sh -disableMetrics
+```
+
+### Compile:
+```sh
+rm -rf build
+mkdir build
+cd build && cmake -GNinja -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18 -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=/home/alex/mipt/cpp-base/third-party/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+```

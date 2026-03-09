@@ -13,7 +13,7 @@ add_executable(05.01 05.01.cpp)
 add_executable(05.02 05.02.cpp)
 add_executable(05.03 05.03.cpp)
 add_executable(05.04 05.04.cpp)
-add_executable(05.05 05.05.cpp)
+# add_executable(05.05 05.05.cpp)
 
 add_subdirectory(06.01)
 add_subdirectory(06.02)

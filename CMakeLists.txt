@@ -2,6 +2,7 @@
 
 cmake_minimum_required(VERSION 3.28)
 project(cpp_coursework LANGUAGES CXX)
+# set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/third-party/vcpkg/scripts/buildsystems/vcpkg.cmake CACHE STRING "Vcpkg toolchain file")
 
 enable_testing()
 
@@ -13,6 +14,4 @@ find_program(CLANG_SCAN_DEPS_PATH NAMES clang-scan-deps-18 clang-scan-deps REQUI
 set(CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS "${CLANG_SCAN_DEPS_PATH}" CACHE FILEPATH "Path to clang-scan-deps" FORCE)
 message(STATUS "Using clang-scan-deps: ${CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS}")
 
-add_subdirectory(third-party)
 add_subdirectory(tasks)
-add_subdirectory(tests)
